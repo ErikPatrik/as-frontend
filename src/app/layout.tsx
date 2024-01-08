@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'Amigo secreto',
+    title: 'Discord logs',
 }
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pt-br">
-            <body className="bg-gray-950 text-gray-100">{children}</body>
+            <body className="bg-blue-200 text-black">{children}</body>
         </html>
     )
 }
