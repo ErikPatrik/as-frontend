@@ -1,26 +1,26 @@
-"use client";
-import { useEffect, useState } from "react";
-import { serchLog } from "../api/discord";
-import { format } from 'date-fns';
-import { ILog } from "../interfaces/ILog";
+"use client"
+import { useEffect, useState } from "react"
+import { serchLog } from "../api/discord"
+import { format } from 'date-fns'
+import { ILog } from "../interfaces/ILog"
 
 const Page = () => {
-    const [logs, setLogs] = useState<ILog[]>([]);
+    const [logs, setLogs] = useState<ILog[]>([])
 
     useEffect(() => {
         const fetchLogs = async () => {
             try {
-                const logsData = await serchLog();
+                const logsData = await serchLog()
                 if (logsData) {
-                    setLogs(logsData);
+                    setLogs(logsData)
                 }
             } catch (error) {
-                console.error("Error to get logs:", error);
+                console.error("Error to get logs:", error)
             }
-        };
+        }
 
-        fetchLogs();
-    }, []);
+        fetchLogs()
+    }, [])
 
     return (
         <div className="relative overflow-x-auto">
@@ -80,7 +80,7 @@ const Page = () => {
             </tbody>
         </table>
     </div>
-    );
+    )
 }
 
 export default Page
