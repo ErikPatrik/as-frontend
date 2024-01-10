@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const req = axios.create({
-    baseURL: 'http://localhost:3000/',
+    baseURL: 'https://discord-manager-rhxv.onrender.com/',
     headers: {
         'Content-Type': 'application/json'
     }
