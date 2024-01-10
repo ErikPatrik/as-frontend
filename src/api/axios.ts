@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from "axios"
 
 export const req = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_BASE_API,
+    baseURL: 'https://discord-manager-rhxv.onrender.com/',
     headers: {
         'Content-Type': 'application/json'
     }
