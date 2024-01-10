@@ -29,3 +29,7 @@ yarn run start
 ```
 
 # Images
+
+- Example
+
+![Example](./images/example.jpeg)
